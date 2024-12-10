@@ -1,0 +1,29 @@
+#sidebar-header,
+#TabsToolbar {
+  display: none;
+}
+
+#titlebar {
+  visibility: collapse !important;
+  z-index: 1;
+}
+
+.titlebar-buttonbox-container {
+  position: absolute;
+  visibility: visible;
+  top: 0;
+  right: 0;
+  height: 40px;
+}
+
+#nav-bar.browser-toolbar {
+  padding-right: 136px !important;
+}
+
+.unified-extensions-item {
+  filter: brightness(150%) grayscale(100%);
+}
+
+.unified-extensions-item:hover {
+  filter: grayscale(0%);
+}

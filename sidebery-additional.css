@@ -1,0 +1,114 @@
+#root.root {
+  --ctx-menu-font: 0.9rem -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+#root.root {
+  --tabs-height: 22px;
+}
+#root.root {
+  --tabs-font: 1rem -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+#root.root {
+  --tabs-bg-hover: #3f2d5788;
+}
+#root.root {
+  --tabs-bg-active: #3f2d57dd;
+}
+
+#root.root {
+  --nav-btn-width: 1.618rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+.NavigationBar .main-items .nav-item {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0.2rem 0 0.2rem 0;
+  height: auto;
+  align-items: center;
+  justify-content: end;
+}
+
+.NavigationBar .panels-box .panel-btn[data-type="add"] {
+  height: var(--nav-btn-width);
+}
+
+.NavigationBar .panels-box .panel-btn:not([data-type="add"]) > svg,
+.NavigationBar .panels-box .panel-btn > img {
+  height: 18px;
+  width: 18px;
+  margin-bottom: 0px;
+}
+
+.NavigationBar .nav-item .icon {
+  position: relative;
+  height: 16px;
+  width: 16px;
+  flex-shrink: 0;
+  fill: var(--color, var(--nav-btn-fg));
+  transform: translateZ(0) rotate(90deg);
+  transition: opacity var(--d-fast);
+  margin: 0.125rem;
+  order: 1;
+}
+
+.NavigationBar .nav-item .icon:last-child,
+.NavigationBar .nav-item .icon:nth-last-child(2) {
+  transform: translateZ(0) rotate(0deg) !important;
+}
+
+.NavigationBar .main-items .nav-item .update-badge {
+  top: 1px;
+  left: 1px;
+}
+
+.NavigationBar .main-items .nav-item .ok-badge,
+.NavigationBar .main-items .nav-item .err-badge,
+.NavigationBar .main-items .nav-item .progress-spinner {
+  display: none;
+}
+
+.NavigationBar .main-items .nav-item .len {
+  position: relative;
+  top: var(--nav-btn-len-margin);
+  right: var(--nav-btn-len-margin);
+  font-size: 0.525rem;
+  font-weight: 700;
+  padding: 0;
+  margin-bottom: 0.125rem;
+  color: var(--nav-btn-fg);
+  text-shadow: 0 0 2px var(--toolbar-bg), 0 0 2px var(--toolbar-bg), 0 0 3px var(--toolbar-bg), 0 0 3px var(--toolbar-bg);
+  border-radius: 4px;
+  transform: translateZ(0);
+  order: 2;
+}
+
+.NavigationBar .main-items .nav-item .name-box {
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0 0 0.26rem 0.1rem;
+  font-size: 12px;
+  color: var(--container-fg, var(--nav-btn-fg));
+  writing-mode: sideways-lr;
+  transform: rotate(180deg);
+  text-orientation: mixed;
+  order: 0;
+}
+
+.NavigationBar .main-items .nav-item .name-box:last-child {
+  display: none;
+}
+
+.NavigationBar .nav-item .name {
+  position: relative;
+  color: var(--color, var(--nav-btn-fg));
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.91rem;
+}
+
+.Tab .fav {
+  height: 18px;
+  width: 18px;
+}
