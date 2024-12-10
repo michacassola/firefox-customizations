@@ -1,11 +1,12 @@
-#sidebar-header,
+/* This is for the old and new header to make it invisible while allowing sub-elements to be visisble (titlebar-buttonbox-container) */
+#titlebar,
 #TabsToolbar {
-  display: none;
-}
-
-#titlebar {
   visibility: collapse !important;
   z-index: 1;
+}
+
+#sidebar-header {
+  display: none;
 }
 
 .titlebar-buttonbox-container {
