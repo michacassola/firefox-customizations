@@ -5,7 +5,7 @@
   z-index: 1;
 }
 
-#sidebar-header {
+#sidebar-header, #sidebar-panel-header {
   display: none;
 }
 
